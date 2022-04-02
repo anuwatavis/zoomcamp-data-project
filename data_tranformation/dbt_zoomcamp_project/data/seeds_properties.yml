@@ -1,0 +1,6 @@
+version: 2
+
+seeds: 
+  - name: product_lookup
+    description: >
+      Product lookup for information about product.
