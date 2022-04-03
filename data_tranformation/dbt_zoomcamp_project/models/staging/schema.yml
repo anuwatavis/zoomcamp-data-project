@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+    - name: staging
+      #For bigquery:
+      database: anuwataravisbot-316014
+      schema: zoomcamp_data_project
+
+      # loaded_at_field: record_loaded_at
+      tables:
+        - name: product_price
+
+models:
+    - name: stg_product_price
+      description: >
+        Trip made by green taxis, also known as boro taxis and street-hail liveries.
+        Green taxis may respond to street hails,but only in the areas indicated in green on the
+        map (i.e. above W 110 St/E 96th St in Manhattan and in the boroughs).
+        The records were collected and provided to the NYC Taxi and Limousine Commission (TLC) by
+        technology service providers. 
+      columns:
+          - name: product_id
+            description: Primary key for this table, generated with a concatenation of vendorid+pickup_datetime
+          - name: product_name 
+            description: > 
+                A code indicating the TPEP provider that provided the record.
+                1= Creative Mobile Technologies, LLC; 
+                2= VeriFone Inc.
+          - name: product_category 
+            description: The date and time when the meter was engaged.
+          - name: product_group 
+            description: The date and time when the meter was disengaged.
+          - name: recored_date 
+            description: The number of passengers in the vehicle. This is a driver-entered value.
+          - name: high_price 
+            description: The elapsed trip distance in miles reported by the taximeter.
+          - name: min_price
+            description: locationid where the meter was engaged.

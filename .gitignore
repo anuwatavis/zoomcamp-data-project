@@ -9,3 +9,5 @@ cloud/terraform/.terraform/providers/registry.terraform.io/hashicorp/google/4.15
 cloud/terraform/.terraform.lock.hcl
 data_ingestion/airflow/.env
 data_ingestion/airflow/dags/initial_dataset_seed.py
+data_ingestion/upload_dataset/services_account.json
+data_ingestion/airflow/logs/dag_processor_manager/dag_processor_manager.log
