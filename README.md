@@ -61,7 +61,7 @@ What the problem the project solves ?
 ![pork](./assets//dashboard_pork.png)
 ![chicken](./assets/dashboard_chicken.png)
 
-# Reference
+# References
 
 - [data-engineering-zoomcamp repository](https://github.com/DataTalksClub/data-engineering-zoomcamp)
 - [Running Airflow in Docker](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
