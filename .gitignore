@@ -1,1 +1,11 @@
 .idea
+data_ingestion/airflow/dags_local/services_account.json
+data_ingestion/airflow/logs/scheduler
+.DS_Store
+cloud/terraform/terraform.tfstate
+cloud/terraform/.terraform/terraform.tfstate
+.gitignore
+cloud/terraform/.terraform/providers/registry.terraform.io/hashicorp/google/4.15.0/darwin_arm64/terraform-provider-google_v4.15.0_x5
+cloud/terraform/.terraform.lock.hcl
+data_ingestion/airflow/.env
+data_ingestion/airflow/dags/initial_dataset_seed.py
