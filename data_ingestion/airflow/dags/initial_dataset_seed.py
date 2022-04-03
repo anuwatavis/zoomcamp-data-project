@@ -107,6 +107,11 @@ with DAG(
     seeding_data = PythonOperator(
         task_id="seeding_download_and_upload_product_price_to_gcs",
         python_callable=initial_dataset_task,
+        op_kwargs={
+            "from_date": "2010-01-01",
+            "to_date": "2021-12-31"
+        },
+
     )
 
     bigquery_external_table_task = BigQueryCreateExternalTableOperator(
