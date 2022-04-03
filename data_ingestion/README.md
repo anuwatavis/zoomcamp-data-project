@@ -17,6 +17,8 @@ python3 initial_dataset.py
 
 ### Execution
 
+[Reference](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_2_data_ingestion/airflow)
+
 1. Build the image (only first-time, or when there's any change in the `Dockerfile`, takes ~15 mins for the first-time):
 
    ```shell
